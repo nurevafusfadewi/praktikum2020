@@ -1,0 +1,38 @@
+---
+title: "Modul 3"
+author: "Eva"
+date: "9/23/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dslabs)
+data(murders)
+```
+no.1 Gunakan fungsi str untuk memeriksa struktur objek “murders”. 
+
+```{r}
+str(murders) 
+```
+a. Terdiri dari 51 negara
+```{r}
+length(murders$state) 
+```
+b. Data berisi tingkat pembunuhan pada 50 negara bagian dan DC
+```{r}
+murders$state
+```
+c. Data berisi Nama negara bagian, singkatan dari nama negara bagian, wilayah
+negara bagian, dan populasi negara bagian serta jumlah total pembunuhan pada
+tahun 2010
+```{r}
+murders
+```
+
+
+
+
